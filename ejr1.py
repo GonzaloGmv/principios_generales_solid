@@ -6,6 +6,9 @@ class Matriz:
         self.elementos = elementos
 
 class Todo(Matriz):
+    def __init__(self, elementos):
+        super().__init__(elementos)
+        
     def imprimir(self):
         for fila in self.elementos:
             print(fila)
